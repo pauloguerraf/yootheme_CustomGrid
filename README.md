@@ -1,4 +1,6 @@
-# Panel Slider Custom Element - Yootheme
+# Grid Custom Element - Yootheme
+
+![Custom Grid](https://github.com/pauloguerraf/yootheme_CustomGrid/blob/main/screenshot.jpg "Screenshot")
 
 ## Instalación
 
