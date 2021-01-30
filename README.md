@@ -3,7 +3,11 @@
 This is a Yootheme (www.yootheme.com) custom element that, unlike the Grid default element, allows to use both icons and images within a grid item. 
 The icon is use as part of the button instead of replacing the image. 
 
+
+
 ![Custom Grid](https://github.com/pauloguerraf/yootheme_CustomGrid/blob/main/screenshot.jpg "Screenshot")
+
+
 
 ## How to install
 
