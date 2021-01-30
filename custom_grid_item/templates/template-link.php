@@ -117,6 +117,7 @@ if ($link && $props['image'] && $element['image_link']) {
 
 if ($link && $element['link_text']) {
 
+    
     if ($element['panel_link']) {
         $link = $this->el('div');
     }

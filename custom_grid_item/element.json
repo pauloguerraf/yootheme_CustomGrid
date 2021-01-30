@@ -1,15 +1,23 @@
 {
     "@import": "./element.php",
-    "name": "grid_item",
-    "title": "Item",
+    "name": "custom_grid_item",
+    "title": "Custom Grid Item",
     "width": 500,
+    "defaults": {
+        "icon_align": "left",
+        "link": "#",
+        "icon": "play"
+    },
     "placeholder": {
         "props": {
             "title": "Title",
-            "meta": "",
+            "meta": "meta",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "image": "",
-            "icon": ""
+            "link": "#",
+            "link_text": "Read More",
+            "icon": "play",
+            "icon_align": "left"
         }
     },
     "templates": {
@@ -46,11 +54,22 @@
             "type": "icon",
             "source": true
         },
+        "icon_align": {
+            "label": "Icon Alignment",
+            "description": "Choose the icon position.",
+            "type": "select",
+            "options": {
+                "Left": "left",
+                "Right": "right"
+            },
+            "enable": "icon"
+        },
         "link": "${builder.link}",
         "link_text": {
             "label": "Link Text",
-            "description": "Set a different link text for this item.",
-            "source": true
+            "description": "Enter the text for the link.",
+            "source": true,
+            "enable": "link"
         },
         "tags": {
             "label": "Tags",
@@ -74,6 +93,7 @@
                         "image",
                         "image_alt",
                         "icon",
+                        "icon_align",
                         "link",
                         "link_text",
                         "tags"

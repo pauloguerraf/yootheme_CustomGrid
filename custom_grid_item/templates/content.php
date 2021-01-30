@@ -10,9 +10,12 @@
 <p><?= $props['meta'] ?></p>
 <?php endif ?>
 
+
 <?php if ($props['content']) : ?>
 <div><?= $props['content'] ?></div>
 <?php endif ?>
+
+
 
 <?php if ($props['link']) : ?>
 <p><a href="<?= $props['link'] ?>"><?= $props['link_text'] ?: $element['link_text'] ?></a></p>

@@ -1,8 +1,8 @@
 {
     "@import": "./element.php",
-    "name": "grid",
-    "title": "Grid",
-    "group": "Nido",
+    "name": "custom_grid",
+    "title": "Custom Grid",
+    "group": "Custom",
     "icon": "${url:images/icon.svg}",
     "iconSmall": "${url:images/iconSmall.svg}",
     "element": true,
@@ -31,7 +31,7 @@
         "meta_align": "below-title",
         "meta_element": "div",
         "content_column_breakpoint": "m",
-        "icon_width": 80,
+        "icon_width": 40,
         "image_align": "top",
         "image_grid_width": "1-2",
         "image_grid_breakpoint": "m",
@@ -43,9 +43,9 @@
     },
     "placeholder": {
         "children": [
-            {"type": "grid_item", "props": {}},
-            {"type": "grid_item", "props": {}},
-            {"type": "grid_item", "props": {}}
+            {"type": "custom_grid_item", "props": {}},
+            {"type": "custom_grid_item", "props": {}},
+            {"type": "custom_grid_item", "props": {}}
         ]
     },
     "templates": {
@@ -56,7 +56,7 @@
         "content": {
             "label": "Items",
             "type": "content-items",
-            "item": "grid_item",
+            "item": "custom_grid_item",
             "media": {
                 "type": "image",
                 "item": {"title": "title", "image": "src"}

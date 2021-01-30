@@ -34,4 +34,5 @@ if ($props['image']) {
             'uk-cover' => false,
         ]);
     }
+
 }

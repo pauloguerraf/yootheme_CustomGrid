@@ -132,11 +132,27 @@ $cell_content = $this->el('div', [
         <?= $meta($element, $props['meta']) ?>
         <?php endif ?>
 
-        <?php if ($props['link'] && ($props['link_text'] || $element['link_text']) && $props['icon']) : ?>
-        <?= $link_container($element, $link($element, $props['link_text']."<span style='padding: 5px;'>".$props['icon']."</span>"?: $element['link_text'].$props['icon']))?>
-        <?php else : ?>
-        <?= $link_container($element, $link($element, $props['link_text'] ?: $element['link_text']))?>
+
+        <?php ####################################### CHANGE THIS ?>
+         
+        <?php if ($props['link'] && $element['link_text']) : ?>
+            <?php if ($props['icon']) : ?>
+            <?php if ($props['icon_align'] == 'left') : ?>
+            <?= $link_container($element, $link($element, "<span style='padding:0 5px;'>".$props['icon']."</span>".$props['link_text'] ?:  $element['link_text']))?>                   
+            <?php endif ?>
+
+            <?php if ($props['icon_align'] == 'right') : ?>
+                <?= $link_container($element, $link($element, ($props['link_text'] ?: $element['link_text'])."<span style='padding:0 5px;'>".$props['icon']."</span>"))?>                
+            <?php endif ?>
+            <?php else : ?>
+                <?= $link_container($element, $link($element, $props['link_text'] ?: $element['link_text']))?>
+            <?php endif?>
         <?php endif ?>
+
+        <?php ###################################### CHANGE THIS ?>
+
+
+        
 
 <?php if ($props['title'] && $element['title_align'] == 'left') : ?>
     <?= $cell_content->end() ?>

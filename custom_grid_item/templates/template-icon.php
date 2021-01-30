@@ -1,6 +1,5 @@
 <?php
 
-// Image
 if ($props['icon']) {
 
     $icon = $this->el('span', [
