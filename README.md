@@ -6,7 +6,9 @@ The icon is use as part of the button instead of replacing the image.
 <br>
 <br>
 ![Custom Grid](https://github.com/pauloguerraf/yootheme_CustomGrid/blob/main/screenshot.jpg "Screenshot")
-
+<br>
+<br>
+<br>
   
 ## How to install
 
