@@ -1,4 +1,4 @@
-# Grid Custom Element - Yootheme
+# Yootheme - Custom Grid Element
 
 ![Custom Grid](https://github.com/pauloguerraf/yootheme_CustomGrid/blob/main/screenshot.jpg "Screenshot")
 
