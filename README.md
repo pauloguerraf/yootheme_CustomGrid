@@ -2,12 +2,13 @@
 
 ![Custom Grid](https://github.com/pauloguerraf/yootheme_CustomGrid/blob/main/screenshot.jpg "Screenshot")
 
-## Instalación
+## How to install
 
 ### WordPress
 
-1. Crear y activar un child theme [child theme](https://yootheme.com/support/yootheme-pro/wordpress/child-themes) para YOOtheme Pro.
-2. Crear una carpeta `/builder` dentro de la carpeta del child theme y copiar las 2 carpetas del custom element:
-- Para usar Panel Slider copiar las carpetas `/builder/panelslider` & `/builder/panelslider_item`
-- Para usar Custom Grid copiar las carpetas `/builder/custom_grid` & `/builder/custom_grid_item`
-3. Ir Customize en Wordpress. El elemento debe ahora estar listado en la categoría Custom al agregar un nuevo elemento a la página.
+1. Create and activate a Yootheme Pro child theme [child theme](https://yootheme.com/support/yootheme-pro/wordpress/child-themes).
+2. Within the child theme folder, create another folder and name it `/builder`.
+3. Place the custom element folder/s inside the `/builder` folder:
+- To use this element, Custom Grid, the folders to be copied are `/builder/custom_grid` & `/builder/custom_grid_item`
+4. Go to Yootheme Customizer in Wordpress admin dashboard. The custom element you just added should now be listed under the Custom category.
+5. You can now add the custom element to your webpage.
